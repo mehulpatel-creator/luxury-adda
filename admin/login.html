@@ -93,17 +93,13 @@
       });
 
       if (res.ok) {
-        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('admin_logged_in', 'true');
         window.location.href = 'dashboard.html';
       } else {
         document.getElementById('error').textContent = 'Invalid credentials';
       }
     }
 
-    // Redirect if already logged in
-    if (localStorage.getItem('isLoggedIn') === 'true') {
-      window.location.href = 'dashboard.html';
-    }
   </script>
 </body>
 </html>

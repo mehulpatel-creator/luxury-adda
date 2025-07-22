@@ -1,8 +1,3 @@
-<script>
-  if (localStorage.getItem('admin_logged_in') !== 'true') {
-    window.location.replace('/admin/login.html');
-  }
-</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +6,11 @@
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="admin.css" />
 </head>
+<script>
+  if (localStorage.getItem('admin_logged_in') !== 'true') {
+    window.location.replace('/admin/login.html');
+  }
+</script>
 <body>
   <button id="logout-btn" onclick="logout()">Logout</button>
 

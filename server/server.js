@@ -16,6 +16,11 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use('/admin', express.static(path.join(__dirname, '../admin')));
 
+// Serve /admin/login.html when user visits /admin
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, '../admin/login.html'));
+});
+
 // --- PRODUCT API ---
 app.get('/api/products', (req, res) => {
   const data = fs.readFileSync('./server/product.json');

@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #f7f7f7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form, .admin-product {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+input, select {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.admin-product img {
+  height: 60px;
+}
+
+.out-of-stock {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+
+#admin-product-list {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: auto;
+}
+
+#logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #c0392b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
